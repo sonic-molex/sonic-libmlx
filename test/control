@@ -1,0 +1,10 @@
+Architecture: amd64
+Depends: libc6 (>= 2.31)
+Description: library hal for sonic
+Maintainer: Molex <lu.mao@molex.com>
+Package: libhal
+Priority: optional
+Section: devel
+Version: 1.3.0
+Installed-Size: 72655
+

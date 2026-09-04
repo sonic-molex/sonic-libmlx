@@ -1,0 +1,4 @@
+libhal-mlx (1.0.0) unstable; urgency=low
+  * Initial release: Add thrift server for hal.
+
+ -- Molex <lu.mao@molex.com>  Tue, 17 Oct 2023 16:00:00 +0800
