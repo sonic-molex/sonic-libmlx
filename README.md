@@ -10,7 +10,7 @@ Branched from `ocs544` (7172ad9) for builds of sonic-buildimage-molex `ocs-hongr
 
 | deb | built from |
 |---|---|
-| `libhal-mlx-ocs-molex-1.1.0` | shasta `carmel-beta-sonic` cdd6e8c8 (hal c9a09fc9, mgmt-lib 5bb1b627), `sonic-hal-build.sh CARMEL` (`-D__CARMEL__`, RegisterFile-CARMEL) |
+| `libhal-mlx-ocs-molex-1.1.0` | shasta `carmel-beta-sonic` a09e71f5 (hal 13b98d28 = dev + 544-dma-fea-dev, util-lib 79c1e4e6, mgmt-lib a1af34f6), `sonic-hal-build.sh CARMEL` (`-D__CARMEL__`; supports both 544 FPGA variants: XDMA and local-bus + DC DMA; packaged /etc/RegisterFile is the local-bus one, the image's hwsku RegisterFile overrides it) |
 | `libhalplatformclient-mlx-1.1.0` | sonic-mlx-debs `platform/` (`platform/build.sh ocs-molex CARMEL`) |
 | `libsai-ocs-mlx-1.1.0` | sonic-mlx-debs `sai/` working tree (OcsMonMemsStrategy on conn_manager's staged API), linked against the libhalapi / liboplkocs above |
 | `allied-vision-1.0.3` | shasta `debian/allied-vision` recipe; adds `libocs_exposure.so`, which the new liboplkocs links |
